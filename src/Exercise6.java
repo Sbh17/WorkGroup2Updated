@@ -3,9 +3,6 @@ import java.util.Arrays;
 public class Exercise6 {
     public static int[] intersectionOfTwoArrays(int [] A ,int [] B) {
         int [] temp= new int[A.length];
-        Arrays.sort(A);
-        Arrays.sort(B);
-
         int i = 0 , j = 0;
 
         while (i< A.length && j < B.length){

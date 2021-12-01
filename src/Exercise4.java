@@ -31,15 +31,12 @@ public class Exercise4 {
 
     public static void main(String[] args) {
         // testing array
-        int [] a =new int[]{ };
         int [] arr = new int[]{1,1,2,3,4,2,3,4,6,7,89,12};
-        System.out.println("Array before remove the duplicates :"+ Arrays.toString(a));
-        Arrays.sort(a);
-        System.out.println("Array after remove the duplicates : "+Arrays.toString(removeDuplicates(a)));
-        // Second array
-        System.out.println("Array2 before removing the duplicates :"+Arrays.toString(arr));
-        Arrays.sort(arr);
+        int [] withOutDuplicates = removeDuplicates(arr);
+        System.out.println("Array after remove the duplicates : ");
+        for (int i =0; i<withOutDuplicates.length ; i++){
+            System.out.println(withOutDuplicates[i]);
+        }
 
-        System.out.println("Array2 after remove the duplicates : "+Arrays.toString(removeDuplicates(arr)));
     }
 }

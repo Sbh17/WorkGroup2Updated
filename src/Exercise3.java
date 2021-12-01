@@ -15,6 +15,17 @@ public class Exercise3 {
             String correctNumber;
             String correctStart="05";
 
+            char [] numbers ={'0','1','2','3','4','5','6','7','8','9','-'};
+
+            for(int i=0; i<originalPhoneNumber.length(); i++) {
+                for (int j = 0; j < numbers.length; j++) {
+                    if(originalPhoneNumber.charAt(i) == numbers[j])
+                        continue;
+                    else
+                        return "";
+                }
+            }
+
             if (originalPhoneNumber.length() == 12 &&
                     originalPhoneNumber.charAt(0)=='9'&& originalPhoneNumber.charAt(1)=='7' && originalPhoneNumber.charAt(2)=='2') {
 

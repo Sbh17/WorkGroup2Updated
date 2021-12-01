@@ -32,7 +32,9 @@ public class Exercise2 {
             System.out.println("Please enter the value");
             arr1[i]= scanner.nextInt();
         }
-        System.out.println("The array is :"+ Arrays.toString(arr));
+        for (int j = 0 ; j< arr1.length; j++){
+            System.out.println(arr1[j]);
+        }
         isNumBiggerThanAvg(arr1);
     }
 }
